@@ -63,13 +63,46 @@
 }
 
 /* Tablet Styles*/
+@media screen and (min-width: 520px) and (max-width: 1024px) {
+  .flex-container {
+    height: fit-content;
+  }
+
+  .quarter {
+    width: 48%;
+  }
 
 
+  .third {
+  width: 48%;
+  order: 2;
+}
 
+.third:last-child {
+ width: 98%;
+ /* flex-grow: 1;*/
+  order: 1;
+}
+}
+
+@media screen and (max-width:520px){
+  .half,
+    .third,
+    .quarter {
+    width: 97%;
+  }
+}
 
 /* Mobile Styles*/
 
 
-
+/* Comments */
+/* I think I find the idea of "nth-of-type" and "last-child"
+to be very useful if used correctly, if only I knew how to use it well,
+my website presentation could be better. Also, I like the "@media screen" thing very
+interesting too, maybe I'm a tad bit confused on how it completely works...like I just
+want to make my bases clear. (Use percentages, don't use pixels that much, very useful). 
+(Can put "min-width" 'AND' "max-width" together to adjust size of the @media).
+(Use order to correctly displace and order things however you want, based on numbers).*/
 
 
